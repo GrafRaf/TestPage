@@ -1,0 +1,10 @@
+//require('./common');
+//var template = require("jade!../templates/index.jade");
+//document.write(template);
+//require("babel/polyfill");
+//require('fetch');
+//const $ = require('jquery');
+require("angular");
+require("angular-animate");
+require("angular-aria");
+require("angular-material");

@@ -1,0 +1,50 @@
+doctype
+html.no-js
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		block title
+		link(rel='stylesheet' href='/static/shared.css')
+		link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+		link(rel="shortcut icon" href="//t-karta.ru/favicon.ico")
+		block styles
+	body
+		header
+			nav
+				block sidenav
+				if user
+					ul.side-nav#slide-out
+						block mobilelinks
+						.divider
+						li
+							a(href='#profile') Профиль
+						li
+							a(href='#password') Изменить пароль	
+						li
+							a(href='/logout') Выйти
+						
+				.nav-wrapper
+					a.brand-logo(href='/') TK
+					
+					if user
+						a.button-collapse.right(href="javascript:void(0)" data-activates="slide-out")
+							i.mdi-navigation-menu
+						ul.right.hide-on-med-and-down
+							li
+								a.button-collapse-desktop(href='javascript:void(0)' data-activates='slide-out') #{user}
+					else
+						.right
+							a.waves-effect.btn.default-primary-color(href='/signin') Войти			
+					ul.right.hide-on-med-and-down
+						block navigation
+					
+					
+					
+							
+		block content
+		
+		block footer
+		
+		script(src='/static/shared.js')
+		block scripts

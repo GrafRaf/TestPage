@@ -1,0 +1,43 @@
+{
+  "name": "testpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrafRaf/TestPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrafRaf/TestPage/issues"
+  },
+  "homepage": "https://github.com/GrafRaf/TestPage#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "bower": "^1.5.3",
+    "bower-webpack-plugin": "^0.1.9",
+    "css-loader": "^0.21.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "fetch": "^0.3.6",
+    "file-loader": "^0.8.4",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7",
+    "jade": "^1.11.0",
+    "jade-html-loader": "0.0.3",
+    "jade-loader": "^0.7.1",
+    "jquery": "^2.1.4",
+    "jshint": "^2.8.0",
+    "jshint-loader": "^0.8.3",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.4.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "dependencies": {
+    "jade-loader": "^0.7.1"
+  }
+}
